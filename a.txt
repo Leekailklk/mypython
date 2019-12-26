@@ -1,0 +1,4 @@
+test
+
+http://www.sina.com表示人的心情、情感和性格特征（http://xml.coverpages.org/humanML.html）。  描述任何物体（http://xml.coverpages.org/pml-ons.html）。  通过网络调用Python方法（使用XML-RPC，这将在第27章演示） 。 XML Cover Pages（http://xml.coverpages.org/xml.html#applications）提供了一些现有的XML 应用示例。
+下

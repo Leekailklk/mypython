@@ -1,0 +1,35 @@
+
+(function() {
+var ref = encodeURIComponent((parent !== window) ? document.referrer : document.location);
+
+var i = document.createElement("img");
+i.src = location.protocol + "//aa.agkn.com/adscores/g.pixel?sid=9212284628&ip=47.74.224.11&page=" + ref;
+i.height=0;i.width=0;i.style="display:none; visibility: hidden";
+document.body.appendChild(i);
+
+
+var l = document.createElement("img");
+l.src = location.protocol + "//idsync.rlcdn.com/425276.gif?partner_uid=ed68da604ef7b9b3234cdbe28da59746"
+l.height=0;l.width=0;l.style="display:none; visibility: hidden";
+document.body.appendChild(l);
+
+
+var p = document.createElement("img");
+p.src = "https://px.powerlinks.com/user/sync/ssps?userId=ed68da604ef7b9b3234cdbe28da59746&sourceId=017009c9-fef3-11e8-a038-127202fb7690&sync=1";
+p.height=0;p.width=0;p.style="display: none; visibility: hidden";
+document.body.appendChild(p)
+
+var r = new XMLHttpRequest();
+r.withCredentials = true;
+var s ="r=" + ref;
+if (!(typeof dianomi_tag_params_0x5D5B5658D67711E9BF02F5518BDC994B === "undefined")) {
+	for (var property in dianomi_tag_params_0x5D5B5658D67711E9BF02F5518BDC994B) {
+		if (dianomi_tag_params_0x5D5B5658D67711E9BF02F5518BDC994B.hasOwnProperty(property)  && dianomi_tag_params_0x5D5B5658D67711E9BF02F5518BDC994B[property] !== null) {
+			s += "&" + property + "=" + encodeURIComponent(dianomi_tag_params_0x5D5B5658D67711E9BF02F5518BDC994B[property]);
+		}
+	}
+}
+
+r.open("GET", location.protocol + "//data.dianomi.com/frontend/pixel?" + s, true);
+r.send();
+})();

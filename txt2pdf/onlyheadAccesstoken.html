@@ -1,0 +1,110 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-/YEVWs7BzxfKyUd6zVxjEQcXRWsLbcEjv045Rq8DSoipySmQblhVKxlXLva2GtNd5DhwCxHwW1RM0N9I7S2Vew==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-481a47a96965f6706fb41bae0d14b09a.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-y6ClXuNSXHX02KTSpyAB44/9EYuqesDamipEk7dPNLuJNpS2cp9emQ9spRMyEqHniLQv/gT+3LNh5ClmcmjqTQ==" rel="stylesheet" href="https://github.githubassets.com/assets/site-212da8d2e327716b925d34199c85916c.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-RXdXt6Q4qNvuDQUlIk7pw4KmlGww82Vb7+0z5MzpLjpzQ5WiUsOS0h81uZJxTfnORfoabCtEOONW0oUUfpUhEg==" rel="stylesheet" href="https://github.githubassets.com/assets/github-668a54bc74d3ac1d18320f010377642b.css" />
+    
+    
+    
+    
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>bytom-1/accesstoken.go at master · Leekailklk/bytom-1 · GitHub</title>
+    <meta name="description" content="Official Go implementation of the Bytom protocol . Contribute to Leekailklk/bytom-1 development by creating an account on GitHub.">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    <meta name="twitter:image:src" content="https://avatars2.githubusercontent.com/u/33309776?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="Leekailklk/bytom-1" /><meta name="twitter:description" content="Official Go implementation of the Bytom protocol . Contribute to Leekailklk/bytom-1 development by creating an account on GitHub." />
+    <meta property="og:image" content="https://avatars2.githubusercontent.com/u/33309776?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="Leekailklk/bytom-1" /><meta property="og:url" content="https://github.com/Leekailklk/bytom-1" /><meta property="og:description" content="Official Go implementation of the Bytom protocol . Contribute to Leekailklk/bytom-1 development by creating an account on GitHub." />
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  
+  
+  <meta name="request-id" content="DE26:45F5:2E8E2BC:43407F4:5DC28F1D" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="DE26:45F5:2E8E2BC:43407F4:5DC28F1D" /><meta name="octolytics-dimension-region_edge" content="ap-southeast-1" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="4979792050439491358" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+
+<meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="MzQ4MDI5ZTE0ZmNhNGNiZmE4YTc1ZTc2MTcxMTNlYzNkNmIwZTU2NDljNzY3NjQ2N2NhY2IwMDM5NjQyYmVlNnx7InJlbW90ZV9hZGRyZXNzIjoiMjIxLjIyOS44NS4xNiIsInJlcXVlc3RfaWQiOiJERTI2OjQ1RjU6MkU4RTJCQzo0MzQwN0Y0OjVEQzI4RjFEIiwidGltZXN0YW1wIjoxNTczMDMxNzEwLCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+
+    <meta name="enabled-features" content="ACTIONS_V2_ON_MARKETPLACE,MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS">
+
+  <meta name="html-safe-nonce" content="2e5d38bc239f36abfc9589451edc5dc218cc3b6a">
+
+  <meta http-equiv="x-pjax-version" content="f69d3cb88b705156fe02a6cd48e51e8d">
+  
+
+      <link href="https://github.com/Leekailklk/bytom-1/commits/master.atom" rel="alternate" title="Recent Commits to bytom-1:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/Leekailklk/bytom-1 git https://github.com/Leekailklk/bytom-1.git">
+
+  <meta name="octolytics-dimension-user_id" content="33309776" /><meta name="octolytics-dimension-user_login" content="Leekailklk" /><meta name="octolytics-dimension-repository_id" content="146963813" /><meta name="octolytics-dimension-repository_nwo" content="Leekailklk/bytom-1" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="true" /><meta name="octolytics-dimension-repository_parent_id" content="97181001" /><meta name="octolytics-dimension-repository_parent_nwo" content="Bytom/bytom" /><meta name="octolytics-dimension-repository_network_root_id" content="97181001" /><meta name="octolytics-dimension-repository_network_root_nwo" content="Bytom/bytom" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/Leekailklk/bytom-1/blob/master/accesstoken/accesstoken.go" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+ 
+</html>
+

@@ -1,0 +1,68 @@
+INFO:root:   start:   
+INFO:root:['client.py', 'urls.txt', 'files1', 'http://localhost:4242']
+INFO:root:  start server:  
+INFO:root:http://localhost:4242
+INFO:root:  server.hello:  
+INFO:root:http://localhost:4242
+INFO:root:  server.hello:  
+INFO:root:http://localhost:4243
+INFO:root:  server.hello:  
+INFO:root:http://localhost:4244
+INFO:root:   start:   
+INFO:root:['client.py', 'urls.txt', 'files3', 'http://localhost:4244']
+INFO:root:  start server:  
+INFO:root:http://localhost:4244
+INFO:root:  server.hello:  
+INFO:root:http://localhost:4242
+INFO:root:  server.hello:  
+INFO:root:http://localhost:4243
+INFO:root:  server.hello:  
+INFO:root:http://localhost:4244
+INFO:root:   start   
+INFO:root:['client.py', 'urls.txt', 'files2', 'http://localhost:4243']
+INFO:root:  start server  
+INFO:root:http://localhost:4243
+INFO:root:  server.hello  
+INFO:root:http://localhost:4242
+INFO:root:  server.hello  
+INFO:root:http://localhost:4243
+INFO:root:  server.hello  
+INFO:root:http://localhost:4244
+INFO:root:   Couldn't find the file  
+INFO:root:asd.asd
+INFO:root:   fetch the file  
+INFO:root:test1.txt
+INFO:root:...exit...
+INFO:root:...exit...
+INFO:root:...exit...
+INFO:root:   start   
+INFO:root:['client.py', 'urls.txt', 'files3', 'http://localhost:4244']
+INFO:root:  start server  
+INFO:root:http://localhost:4244
+INFO:root:  server.hello  
+INFO:root:http://localhost:4242
+INFO:root:  server.hello  
+INFO:root:http://localhost:4243
+INFO:root:  server.hello  
+INFO:root:http://localhost:4244
+INFO:root:   start   
+INFO:root:['client.py', 'urls.txt', 'files3', 'http://localhost:4244']
+INFO:root:  start server  
+INFO:root:http://localhost:4244
+INFO:root:  server.hello  
+INFO:root:http://localhost:4242
+INFO:root:  server.hello  
+INFO:root:http://localhost:4243
+INFO:root:  server.hello  
+INFO:root:http://localhost:4244
+INFO:root:...exit...
+INFO:root:   start   
+INFO:root:['client.py', 'urls.txt', 'files2', 'http://localhost:4244']
+INFO:root:  start server  
+INFO:root:http://localhost:4244
+INFO:root:  server.hello  
+INFO:root:http://localhost:4242
+INFO:root:  server.hello  
+INFO:root:http://localhost:4243
+INFO:root:  server.hello  
+INFO:root:http://localhost:4244
